@@ -7,7 +7,7 @@ Este projeto visa o envio de notificações de vencimento de títulos para os cl
 1. **Dataset `dsVenceB`** - Este dataset realiza uma consulta no Protheus para obter todos os clientes cujos títulos irão vencer em **1 dia**. É utilizado para envio de lembretes de pagamento aos clientes, assegurando que estejam cientes dos vencimentos iminentes.
    ![dsVenceB](./images/dsVenceB.jpeg)
 
-2. **Dataset `dsVenceD`** - Este dataset consulta no Protheus para obter os clientes cujos títulos estão vencidos há **4 ou 5 dias**. O objetivo é identificar clientes em débito recente e enviar avisos de débito, incentivando-os a regularizar a situação.
+2. **Dataset `dsVenceD`** - Este dataset consulta no Protheus para obter os clientes cujos títulos estão vencidos há **5 dias**. O objetivo é identificar clientes em débito recente e enviar avisos de débito, incentivando-os a regularizar a situação.
    ![dsVenceD](./images/dsVenceD.jpeg)
 
 3. **Dataset `dsEnvEmail`** - Dataset destinado ao envio de emails de notificação para os clientes. Este dataset envia tanto lembretes de vencimento quanto avisos de débito, dependendo do status do título consultado nos datasets anteriores.
